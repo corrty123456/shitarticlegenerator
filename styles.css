@@ -10,7 +10,7 @@ body {
 
 .container {
     text-align: center;
-    width: 80%;
+    width: 90%;
     max-width: 700px;
     background: #ffffff;
     border-radius: 8px;
@@ -34,7 +34,6 @@ input {
     border: 1px solid #ddd;
     border-radius: 8px;
     width: 100%;
-    max-width: 600px;
     box-sizing: border-box;
     transition: border-color 0.3s ease;
 }
@@ -65,4 +64,40 @@ p {
     margin-top: 20px;
     color: #555;
     white-space: pre-wrap; /* 保持格式 */
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+    
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+    
+    input {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 14px;
+    }
 }
